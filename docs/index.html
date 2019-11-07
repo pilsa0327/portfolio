@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section class="content">
+        <nav>
+            <div><button id="btn1">ABOUT</button></div>
+            <div><button id="btn2">SKILLS</button></div>
+            <div><button id="btn3">PROJECT</button></div>
+            <div><button id="btn4">HomePage</button></div>
+        </nav>
+        <main>
+            <div class="context" id="about">
+                <div>
+                    <a>신입 개발자 윤창흠의 포트폴리오</a>
+                    <p class="typing"></p>
+                </div>
+                <div>ABOUT</div>
+                <div>ABOUT</div>
+                <div>ABOUT</div>
+            </div>
+
+            <div class="context hide" id="skills">
+                <div>SKILLS</div>
+                <div>SKILLS</div>
+                <div>SKILLS</div>
+                <div>SKILLS</div>
+            </div>
+
+            <div class="context hide" id="project">
+                <div>PROJECT</div>
+                <div>PROJECT</div>
+                <div>PROJECT</div>
+                <div>PROJECT</div>
+            </div>
+
+            <div class="context hide" id="homepage">
+                <div>HomePage</div>
+                <div>HomePage</div>
+                <div>HomePage</div>
+                <div>HomePage</div>
+            </div>
+        </main>
+
+    </section>
+
+    <script>
+        $('#btn1').click(function () {
+            $('.context').addClass('hide')
+            $('#about').removeClass('hide')
+
+        })
+        $('#btn2').click(function () {
+            $('.context').addClass('hide')
+            $('#skills').removeClass('hide')
+        })
+        $('#btn3').click(function () {
+            $('.context').addClass('hide')
+            $('#project').removeClass('hide')
+        })
+        $('#btn4').click(function () {
+            $('.context').addClass('hide')
+            $('#homepage').removeClass('hide')
+        })
+
+        let typingBool = false;
+        let typingIdx = 0;
+        let typingTxt = $(".context a").text();
+        typingTxt = typingTxt.split(""); 
+        if (typingBool == false) { 
+            typingBool = true;
+            let tyInt = setInterval(typing, 100);
+        }
+        function typing() {
+            if (typingIdx < typingTxt.length) { 
+                $(".typing").append(typingTxt[typingIdx]);
+                typingIdx++;
+            } else {
+                clearInterval(tyInt);
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

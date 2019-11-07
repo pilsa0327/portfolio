@@ -1,0 +1,68 @@
+@font-face { font-family: 'BMDOHYEON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'BMDOHYEON';
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.content nav {
+    flex-basis: 370px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black
+}
+.content nav div{
+    padding: 20px;     
+}
+.content main{
+    border: 1px solid gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left : 70px;
+}
+nav button{
+    background-color: black;
+    border-width: 0;
+    color : white;
+    font-size : 20px;
+}
+
+.hide{
+    display:none;
+}
+
+
+.context a{
+    display : none;
+}
+
+.typing {  
+    display: inline-block; 
+    animation-name: cursor; 
+    animation-duration: 0.3s; 
+    animation-iteration-count: infinite; 
+} 
+
+@keyframes cursor{ 
+    0%{border-right: 1px solid #fff} 
+    50%{border-right: 1px solid #000} 
+    100%{border-right: 1px solid #fff} 
+}
+
+#about p{
+    font-size : 40px;
+
+}
