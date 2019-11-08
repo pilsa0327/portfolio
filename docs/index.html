@@ -17,8 +17,8 @@
             <div><button id="btn1">ABOUT</button></div>
             <div><button id="btn2">SKILLS</button></div>
                 <div class="index1"><button id="btn3">PROJECT</button></div>
-                <div class= "hide index"><button id="btn5">&nbsp;&nbsp;&nbsp;- etherWallet</button></div>
-                <div class= "hide index"><button id="btn6"> - etherScan</button></div>  
+                <div class= "hide index"><button id="btn5">&nbsp;&nbsp;&nbsp;- EtherWallet</button></div>
+                <div class= "hide index"><button id="btn6"> - EtherScan</button></div>  
             <div><button id="btn4">HomePage</button></div>
         </nav>
         <main>
@@ -36,12 +36,12 @@
             <div class="context hide" id="skills">
                 <div id="skills-cont">
                     <div>SKILLS</div>
-                    <div>
+                    <div class="img-list">
                         <img src="./public/images/logo/html.png" />
                         <img src="./public/images/logo/css.png" />
                         <img style= "border-radius: 7px;" src="./public/images/logo/javascript.png" />
                     </div>
-                    <div>
+                    <div class="img-list">
                         <img src="./public/images/logo/jquery.png" />
                         <img src="./public/images/logo/nodejs.png" />
                         <img src="./public/images/logo/ethereum.png" />
@@ -50,11 +50,20 @@
                 </div>  
             </div>
 
-            <div class="context hide" id="project">
-                <div>PROJECT</div>
-                <div>PROJECT</div>
-                <div>PROJECT</div>
-                <div>PROJECT</div>
+            <div class="context hide" id="etherWallet">
+                <div id="skills-cont">
+                    <div>EtherWallet</div>
+                    <div class="a">etherWallet</div>
+                    <div class="a">etherWallet</div>
+                    <div class="a">etherWallet</div>
+                </div>
+            </div>
+
+            <div class="context hide" id="etherScan">
+                    <div>EtherScan</div>
+                    <div>etherScan</div>
+                    <div>etherScan</div>
+                    <div>etherScan</div>
             </div>
 
             <div class="context hide" id="homepage">
@@ -71,7 +80,6 @@
         $('#btn1').click(function () {
             $('.context').addClass('hide')
             $('#about').removeClass('hide')
-
         })
         $('#btn2').click(function () {
             $('.context').addClass('hide')
@@ -90,6 +98,17 @@
             $('.context').addClass('hide')
             $('#homepage').removeClass('hide')
         })
+
+        $('#btn5').click(function () {
+            $('.context').addClass('hide')
+            $('#etherWallet').removeClass('hide')
+        })
+
+        $('#btn6').click(function () {
+            $('.context').addClass('hide')
+            $('#etherScan').removeClass('hide')
+        })
+        
 
         let typingBool = false;
         let typingIdx = 0;
@@ -120,10 +139,6 @@
                 clearInterval(tyInt);
             }
         }
-
-
     </script>
-
 </body>
-
 </html>
