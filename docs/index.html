@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./public/css/style.css">
     <script src="./public/js/jquery-3.4.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
@@ -15,7 +16,9 @@
         <nav>
             <div><button id="btn1">ABOUT</button></div>
             <div><button id="btn2">SKILLS</button></div>
-            <div><button id="btn3">PROJECT</button></div>
+                <div class="index1"><button id="btn3">PROJECT</button></div>
+                <div class= "hide index"><button id="btn5">&nbsp;&nbsp;&nbsp;- etherWallet</button></div>
+                <div class= "hide index"><button id="btn6"> - etherScan</button></div>  
             <div><button id="btn4">HomePage</button></div>
         </nav>
         <main>
@@ -23,23 +26,28 @@
                 <div>
                     <a id="type1">Developer</a>
                     <a id="type2">&nbsp;&nbsp;윤 창 흠 의 포 트 폴 리 오</a>
-                    <p class="typing"></p></br>
-                    <p class="typing1"></p>
+                    <p class="typing"></p>
+                    <p class="typing1"></p></br></br></br>
                 </div>
-                <div id ="aboutContext">
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senior developer가 되기 위해</div>
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today i learned.</div><br>
-                    <div></div>
-                    
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email : pilsa0327@gmail.com</div>
+                <div id="aboutContext">
                 </div>
             </div>
 
             <div class="context hide" id="skills">
-                <div>SKILLS</div>
-                <div>SKILLS</div>
-                <div>SKILLS</div>
-                <div>SKILLS</div>
+                <div id="skills-cont">
+                    <div>SKILLS</div>
+                    <div>
+                        <img src="./public/images/logo/html.png" />
+                        <img src="./public/images/logo/css.png" />
+                        <img style= "border-radius: 7px;" src="./public/images/logo/javascript.png" />
+                    </div>
+                    <div>
+                        <img src="./public/images/logo/jquery.png" />
+                        <img src="./public/images/logo/nodejs.png" />
+                        <img src="./public/images/logo/ethereum.png" />
+                        <img src="./public/images/logo/web3js.jpg" />
+                    </div>
+                </div>  
             </div>
 
             <div class="context hide" id="project">
@@ -70,8 +78,13 @@
             $('#skills').removeClass('hide')
         })
         $('#btn3').click(function () {
-            $('.context').addClass('hide')
-            $('#project').removeClass('hide')
+            if($('.index').hasClass('hide')){
+                $('.index1').css({"padding" : "15px"})
+                $('.index').removeClass('hide')
+            } else {
+                $('.index1').css({"padding" : "30px"})
+                $('.index').addClass('hide')
+            }
         })
         $('#btn4').click(function () {
             $('.context').addClass('hide')
@@ -82,16 +95,23 @@
         let typingIdx = 0;
         let typingIdx1 = 0;
         let typingTxt = $("#type1").text();
-        typingTxt = typingTxt.split(""); 
+        typingTxt = typingTxt.split("");
         let typingTxt1 = $("#type2").text();
-        typingTxt1 = typingTxt1.split(""); 
-        if (typingBool == false) { 
+        typingTxt1 = typingTxt1.split("");
+        if (typingBool == false) {
             typingBool = true;
             let tyInt = setInterval(typing, 100);
+            setTimeout(function () {
+                $("#aboutContext").html(`
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보다 나은 개발자가 되기 위해</div></br>
+                <div style="color: #bd5d38; font-size: 35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today i learned.</div> </br></br></br>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email : pilsa0327@gmail.com</div>`
+                )
+            }, 3000)
         }
 
         function typing() {
-            if (typingIdx < typingTxt.length) { 
+            if (typingIdx < typingTxt.length) {
                 $(".typing").append(typingTxt[typingIdx]);
                 typingIdx++;
             } else {
@@ -100,7 +120,7 @@
                 clearInterval(tyInt);
             }
         }
-   
+
 
     </script>
 

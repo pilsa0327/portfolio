@@ -14,7 +14,8 @@
 }
 
 .content nav {
-    flex-basis: 370px;
+    flex-shrink: 0;
+    flex-basis: 300px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -23,7 +24,7 @@
     background-color: black
 }
 .content nav div{
-    padding: 20px;     
+    padding: 30px;     
 }
 .content main{
     border: 1px solid gray;
@@ -31,14 +32,16 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left : 50px;
+    padding-left : 70px;
 }
 nav button{
     background-color: black;
     border-width: 0;
     color : white;
     font-size : 20px;
+    letter-spacing: 1px;
 }
+
 
 .hide{
     display:none;
@@ -64,16 +67,50 @@ nav button{
 
 .typing{
     color : #bd5d38;
-    font-size : 45px;
+    font-size : 65px;
     padding-bottom: 15px;
+    font-style: italic;
+    
 }
 
 .typing1{
-    font-size : 50px;
+    font-size : 70px;
     padding-bottom: 25px;
+    
 }
 
 #aboutContext div {
-    font-size : 20px;
+    font-size : 30px;
 }
 
+#skills-cont div{
+    flex-direction: column;
+    padding-bottom: 50px;
+    font-size : 25px;
+}
+
+
+#skills-cont div:nth-child(1){
+    font-size : 50px !important;
+    padding-bottom: 80px !important;
+    color : #bd5d38;
+    font-style: italic;
+}
+
+#skills-cont img{
+    width: 120px;
+    height: 100px;
+    
+    
+}
+.index{
+    padding : 10px !important;
+}
+
+#btn5, #btn6{
+    font-size : 15px !important;
+}
+
+#btn5{
+    letter-spacing: 1.2px;
+}
