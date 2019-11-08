@@ -21,12 +21,18 @@
         <main>
             <div class="context" id="about">
                 <div>
-                    <a>신입 개발자 윤창흠의 포트폴리오</a>
-                    <p class="typing"></p>
+                    <a id="type1">Developer</a>
+                    <a id="type2">&nbsp;&nbsp;윤 창 흠 의 포 트 폴 리 오</a>
+                    <p class="typing"></p></br>
+                    <p class="typing1"></p>
                 </div>
-                <div>ABOUT</div>
-                <div>ABOUT</div>
-                <div>ABOUT</div>
+                <div id ="aboutContext">
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senior developer가 되기 위해</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today i learned.</div><br>
+                    <div></div>
+                    
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email : pilsa0327@gmail.com</div>
+                </div>
             </div>
 
             <div class="context hide" id="skills">
@@ -74,21 +80,27 @@
 
         let typingBool = false;
         let typingIdx = 0;
-        let typingTxt = $(".context a").text();
+        let typingIdx1 = 0;
+        let typingTxt = $("#type1").text();
         typingTxt = typingTxt.split(""); 
+        let typingTxt1 = $("#type2").text();
+        typingTxt1 = typingTxt1.split(""); 
         if (typingBool == false) { 
             typingBool = true;
             let tyInt = setInterval(typing, 100);
         }
+
         function typing() {
             if (typingIdx < typingTxt.length) { 
                 $(".typing").append(typingTxt[typingIdx]);
                 typingIdx++;
             } else {
+                $(".typing1").append(typingTxt1[typingIdx1]);
+                typingIdx1++;
                 clearInterval(tyInt);
             }
         }
-
+   
 
     </script>
 

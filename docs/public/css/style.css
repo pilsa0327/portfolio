@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left : 70px;
+    padding-left : 50px;
 }
 nav button{
     background-color: black;
@@ -62,7 +62,18 @@ nav button{
     100%{border-right: 1px solid #fff} 
 }
 
-#about p{
-    font-size : 40px;
-
+.typing{
+    color : #bd5d38;
+    font-size : 45px;
+    padding-bottom: 15px;
 }
+
+.typing1{
+    font-size : 50px;
+    padding-bottom: 25px;
+}
+
+#aboutContext div {
+    font-size : 20px;
+}
+
