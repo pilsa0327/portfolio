@@ -21,6 +21,7 @@
             <div class="hide index"><button id="btn6">&nbsp; - Wallet ver2</button></div>
             <div class="hide index"><button id="btn7"> - EtherScan</button></div>
             <div><button id="btn4">Info</button></div>
+            <div><button id="btn8">test</button></div>
         </nav>
         <main>
             <div class="context" id="about">
@@ -61,8 +62,8 @@
                             <li>개발인원 : 4명 / 개발기간 : 19.9.2- 19.9.18(17일)</li>
                             <li>역할 : 팀장 / Front / Back End</li>
                             <li>개발언어 : html(ejs), css(bootstrap), js, nodejs</li>
-                            <li>코드 및 기능: <a
-                                    href="https://github.com/Hyun-Geol/ethwallet" class="link">https://github.com/Hyun-Geol/ethwallet</a>
+                            <li>코드 및 기능: <a href="https://github.com/Hyun-Geol/ethwallet"
+                                    class="link">https://github.com/Hyun-Geol/ethwallet</a>
                             </li>
                             <li>느낀점 및 성장점 : </li>
                         </ul>
@@ -90,9 +91,10 @@
                             <li>개발목표 : 개인 프로젝트- wallet 디자인 및 코드 수정(jquery 사용, 리팩토링, 프로젝트 구조, 기능추가 등) </li>
                             <li>개발기간 : 19.10.28- 19.11.6(10일)</li>
                             <li>개발언어 : html(ejs), css(bootstrap), js, jquery, nodejs</li>
-                            
-                                <li>코드 및 기능 : <a href="https://github.com/pilsa0327/ewallet" class="link">https://github.com/pilsa0327/ewallet</a></li>
-                                <li>느낀점 및 성장점 : </li>
+
+                            <li>코드 및 기능 : <a href="https://github.com/pilsa0327/ewallet"
+                                    class="link">https://github.com/pilsa0327/ewallet</a></li>
+                            <li>느낀점 및 성장점 : </li>
                         </ul>
                         <p> 기존 wallet프로젝트 이후 공부한 jquery 및 프로젝트 구조 설계 등을 적용하면서 공부하기위해 혼자 wallet을</p>
                         <p>만들어보았다. 모든 작업을 혼자서 하려니 처음엔 막막하고 할 일이 너무 많게 느껴졌지만, 우선순위를 정해 하나씩</p>
@@ -102,11 +104,11 @@
                     <div id="wallet_context2">
                         <img src="./public/images/wallet/index.jpg" />
                         <img src="./public/images/wallet/create.jpg" />
-                        <img src="./public/images/wallet/bringprivatekey.jpg" />
+                        <img src="./public/images/wallet/bringPrivatekey.jpg" />
                         <img src="./public/images/wallet/main.jpg" />
                         <img src="./public/images/wallet/send.jpg" />
-                        <img src="./public/images/wallet/exportprivatekey1.jpg" />
-                        <img src="./public/images/wallet/exportprivatekey2.jpg" />
+                        <img src="./public/images/wallet/exportPrivatekey1.jpg" />
+                        <img src="./public/images/wallet/exportPrivatekey2.jpg" />
                     </div>
                 </div>
             </div>
@@ -121,8 +123,8 @@
                             <li>개발인원 : 4명 / 개발기간 : 19.9.19- 19.9.27(9일)</li>
                             <li>역할 : 팀장 / Front / Back End</li>
                             <li>개발언어 : html(ejs), css(bootstrap), js, nodejs</li>
-                            <li>코드 및 기능: <a
-                                    href="https://github.com/pilsa0327/etherscan" class="link">https://github.com/pilsa0327/etherscan</a>
+                            <li>코드 및 기능: <a href="https://github.com/pilsa0327/etherscan"
+                                    class="link">https://github.com/pilsa0327/etherscan</a>
                             </li>
                             <li>느낀점 및 성장점 : </li>
                         </ul>
@@ -136,7 +138,7 @@
                         <img src="./public/images/scan/block.jpg" />
                         <img src="./public/images/scan/transaction.jpg" />
                         <img src="./public/images/scan/address.jpg" />
-                  
+
                     </div>
                 </div>
             </div>
@@ -145,7 +147,7 @@
                 <div id="skills-cont">
                     <div>Info</div>
                     <div class="img-list">
-                        
+
                     </div>
                     <div class="img-list">
                         <a href="https://github.com/pilsa0327/etherscan" class="link">https://github.com/pilsa0327/</a>
@@ -153,10 +155,21 @@
                     </div>
                 </div>
             </div>
+
+            <div class="context hide" id="test">
+
+                <div class="tdiv">1</div>
+                <div class="tdiv" id="test1">
+                    <div class="tdiv2">2</div>
+                    <div class="tdiv2">3</div>
+                </div>
+                <div class="tdiv" id="test1">
+                    <div class="tdiv2">4</div>
+                    <div class="tdiv2">5</div>
+                </div>
+            </div>
         </main>
-
     </section>
-
     <script>
         $('#btn1').click(function () {
             $('.context').addClass('hide')
@@ -194,6 +207,10 @@
             $('.context').addClass('hide')
             $('#etherScan').removeClass('hide')
         })
+        $('#btn8').click(function () {
+            $('.context').addClass('hide')
+            $('#test').removeClass('hide')
+        })
 
 
         let typingBool = false;
@@ -208,22 +225,19 @@
             let tyInt = setInterval(typing, 100);
             setTimeout(function () {
                 $("#aboutContext").html(`
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보다 나은 개발자가 되기 위해</div></br>
-                <div style="color: #bd5d38; font-size: 35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today I learned.</div> </br></br></br>
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://github.com/pilsa0327/portfolio</div>`
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보다 나은 개발자가 되기 위해</div></br>
+                        <div style="color: #bd5d38; font-size: 35px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today I
+                            learned.</div> </br></br></br>
+                        <div style="font-size: 20px">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://github.com/pilsa0327/portfolio</div>
+                        `
                 )
             }, 3200)
         }
 
         function typing() {
-            if (typingIdx < typingTxt.length) {
-                $(".typing").append(typingTxt[typingIdx]);
-                typingIdx++;
-            } else {
-                $(".typing1").append(typingTxt1[typingIdx1]);
-                typingIdx1++;
-                clearInterval(tyInt);
-            }
+            if (typingIdx < typingTxt.length) { $(".typing").append(typingTxt[typingIdx]); typingIdx++; }
+            else { $(".typing1").append(typingTxt1[typingIdx1]); typingIdx1++; clearInterval(tyInt); }
         }
     </script>
 </body>
