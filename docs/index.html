@@ -16,12 +16,9 @@
         <nav>
             <div><button id="btn1">ABOUT</button></div>
             <div><button id="btn2">SKILLS</button></div>
-            <div class="index1"><button id="btn3">PROJECT</button></div>
-            <div class="hide index"><button id="btn5">&nbsp;&nbsp;&nbsp;- EtherWallet</button></div>
-            <div class="hide index"><button id="btn6">&nbsp; - Wallet ver2</button></div>
-            <div class="hide index"><button id="btn7"> - EtherScan</button></div>
-            <div><button id="btn4">Info</button></div>
-            <div><button id="btn8">test</button></div>
+            <div><button id="btn3">PROJECT</button></div>
+            <div><button id="btn4">INFO</button></div>
+
         </nav>
         <main>
             <div class="context" id="about">
@@ -53,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="context hide" id="etherWallet">
+            <!-- <div class="context hide" id="etherWallet">
                 <div id="etherWallet-cont">
                     <div>EtherWallet</div>
                     <div id="wallet_context">
@@ -111,9 +108,9 @@
                         <img src="./public/images/wallet/exportPrivatekey2.jpg" />
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="context hide" id="etherScan">
+            <!-- <div class="context hide" id="etherScan">
                 <div id="etherWallet-cont">
                     <div>EtherScan</div>
                     <div id="wallet_context">
@@ -141,6 +138,114 @@
 
                     </div>
                 </div>
+            </div> -->
+
+            <div class="context hide" id="test">
+                <div class="tdiv" id="title_test">Project</div>
+                <div class="tdiv" id="test1">
+                    <div class="tdiv2" style="padding-bottom: 5px">
+                        <a id="name">EtherWallet</a>
+                        <a href="#layer2" class="hover btn-example" id=img_btn1>설 명</a>
+                        <div class="dim-layer">
+                            <div class="dimBg"></div>
+                            <div id="layer2" class="pop-layer">
+                                <div class="pop-container">
+                                    <div class="pop-conts">
+                                        <!--content //-->
+                                        <div class="ctxt">
+                                            <p>EtherWallet</p>
+                                            <div class="ctxt1">
+                                                <div class="ctxt3">
+                                                    <img src="./public/images/wallet/index.jpg" />
+                                                    <p>
+                                                        Index Page</br>
+                                                        - ID / Password 를 통한 로그인 </br>
+                                                        - 계정생성/ PrivateKey로 계정가져오기</br>
+                                                        페이지 이동
+                                                    </p>
+                                                </div>
+                                                <div class="ctxt3">
+                                                    <img src="./public/images/wallet/create.jpg" />
+                                                    <p>
+                                                        Create Page</br>
+                                                        - 계정 생성시 publickey 와 privatekey</br>
+                                                        생성후 index 페이지로 이동
+                                                    </p>
+                                                </div>
+                                                <div class="ctxt3">
+                                                    <img src="./public/images/wallet/bringPrivatekey.jpg" />
+                                                    <p>
+                                                        importprivatekey Page</br>
+                                                        - privatekey로 계정 생성
+                                                    </p>
+                                                </div>
+                                                <div class="ctxt3">
+                                                    <img src="./public/images/wallet/main.jpg" />
+                                                    <p>
+                                                        Main Page</br>
+                                                        - Address, balance(잔액), History 값 출력</br>
+                                                        - 입금 클릭시 faucet페이지에 이더 요청</br>
+                                                        &nbsp; (TXhash값 database에 저장)/이더 입금
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="ctxt1">
+                                                    <div>
+                                                        <img src="./public/images/wallet/send.jpg" />
+                                                        <p>
+                                                            Send Page</br>
+                                                            - 계정 생성시 publickey 와 privatekey</br>
+                                                            생성후 index 페이지로 이동
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./public/images/wallet/exportPrivatekey1.jpg" />
+                                                        <p>
+                                                            exportprivatekey Page1</br>
+                                                            - Id, password 입력시 privatekey 출력
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="./public/images/wallet/exportPrivatekey2.jpg" />
+                                                        <p>
+                                                            exportprivatekey Page2</br>
+                                                            - privatekey 출력 결과
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-r">
+                                            <a href="#" class="btn-layerClose">Close</a>
+                                        </div>
+                                        <!--// content-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="*" class="hover" id=img_btn2>Test</a>
+                        <img src="./public/images/etherwallet.jpg" />
+                        <p id="name2">EtherScan</p>
+                        <a href="*" class="hover" id=img_btn3>설 명</a>
+                        <a href="*" class="hover" id=img_btn4>Test</a>
+                        <img src="./public/images/etherscan_page.jpeg" />
+                    </div>
+                </div>
+                <div class="tdiv" id="test1">
+                    <div class="tdiv2">
+                        <a id="name">EtherWallet</a>
+                        <a href="*" class="hover" id=img_btn1>설 명</a>
+                        <a href="*" class="hover" id=img_btn2>Test</a>
+                        <img src="./public/images/etherwallet.jpg" />
+                        <p id="name2">EtherScan</p>
+                        <a href="*" class="hover" id=img_btn3>설 명</a>
+                        <a href="*" class="hover" id=img_btn4>Test</a>
+                        <img src="./public/images/etherscan_page.jpeg" />
+                    </div>
+                </div>
             </div>
 
             <div class="context hide" id="info">
@@ -156,18 +261,6 @@
                 </div>
             </div>
 
-            <div class="context hide" id="test">
-
-                <div class="tdiv">1</div>
-                <div class="tdiv" id="test1">
-                    <div class="tdiv2">2</div>
-                    <div class="tdiv2">3</div>
-                </div>
-                <div class="tdiv" id="test1">
-                    <div class="tdiv2">4</div>
-                    <div class="tdiv2">5</div>
-                </div>
-            </div>
         </main>
     </section>
     <script>
@@ -180,36 +273,12 @@
             $('#skills').removeClass('hide')
         })
         $('#btn3').click(function () {
-            if ($('.index').hasClass('hide')) {
-                $('.index1').css({ "padding": "15px" })
-                $('.index').removeClass('hide')
-            } else {
-                $('.index1').css({ "padding": "30px" })
-                $('.index').addClass('hide')
-            }
+            $('.context').addClass('hide')
+            $('#test').removeClass('hide')
         })
         $('#btn4').click(function () {
             $('.context').addClass('hide')
             $('#info').removeClass('hide')
-        })
-
-        $('#btn5').click(function () {
-            $('.context').addClass('hide')
-            $('#etherWallet').removeClass('hide')
-        })
-
-        $('#btn6').click(function () {
-            $('.context').addClass('hide')
-            $('#wallet_2').removeClass('hide')
-        })
-
-        $('#btn7').click(function () {
-            $('.context').addClass('hide')
-            $('#etherScan').removeClass('hide')
-        })
-        $('#btn8').click(function () {
-            $('.context').addClass('hide')
-            $('#test').removeClass('hide')
         })
 
 
@@ -239,6 +308,46 @@
             if (typingIdx < typingTxt.length) { $(".typing").append(typingTxt[typingIdx]); typingIdx++; }
             else { $(".typing1").append(typingTxt1[typingIdx1]); typingIdx1++; clearInterval(tyInt); }
         }
+
+        $('.btn-example').click(function () {
+            var $href = $(this).attr('href');
+            layer_popup($href);
+        });
+        function layer_popup(el) {
+
+            var $el = $(el);        //레이어의 id를 $el 변수에 저장
+            var isDim = $el.prev().hasClass('dimBg');   //dimmed 레이어를 감지하기 위한 boolean 변수
+
+            isDim ? $('.dim-layer').fadeIn() : $el.fadeIn();
+
+            var $elWidth = ~~($el.outerWidth()),
+                $elHeight = ~~($el.outerHeight()),
+                docWidth = $(document).width(),
+                docHeight = $(document).height();
+
+            // 화면의 중앙에 레이어를 띄운다.
+            if ($elHeight < docHeight || $elWidth < docWidth) {
+                $el.css({
+                    marginTop: -$elHeight / 2,
+                    marginLeft: -$elWidth / 2
+                })
+            } else {
+                $el.css({ top: 0, left: 0 });
+            }
+
+            $el.find('a.btn-layerClose').click(function () {
+                isDim ? $('.dim-layer').fadeOut() : $el.fadeOut(); // 닫기 버튼을 클릭하면 레이어가 닫힌다.
+                return false;
+            });
+
+            $('.layer .dimBg').click(function () {
+                $('.dim-layer').fadeOut();
+                return false;
+            });
+
+        }
+
+
     </script>
 </body>
 

@@ -1,0 +1,31 @@
+<section class="margin-top50 py-5">
+        <div class="container-product py-xl-5 py-lg-3">
+            <div class="title-section text-center mb-md-5 mb-4">
+                <h3 class="w3ls-title mb-3">NOW SALE!</h3>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-5" style="margin: auto;">
+                    <div class="product-demo">
+                        <a href="#pro1" class="pro2">
+                            <img src="images/9.jpg" alt=" " class="img-fluid" />
+                            <h4 class="p-mask" style="text-align: center;">MAC 1 - <span>$500</span></h4>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div id="pro1" class="pop-overlay">
+                        <div class="popup">
+                            <div id="qrcode1"></div>
+                            <script>
+                                jQuery('#qrcode1').qrcode({
+                                    render: "table",
+                                    width: 200,
+                                    height: 200,
+                                    text: "http://203.236.220.33:3000/receipt"
+                                });   
+                            </script>
+                            <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            <a class="close" href="#product">×</a>
+                        </div>
+                    </div>
