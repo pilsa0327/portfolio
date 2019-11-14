@@ -212,19 +212,15 @@ nav button{
 
 .tdiv2 img {
     width:440px; 
-    height:295px;
+    height:330px;
     border-radius: 7px;
 }
 
 #title_test {
     font-size : 50px;
     color : #bd5d38;
+    padding-bottom : 35px; 
 }
-
-/* .tdiv2 img:hover {
-    transform: scale(1.1);
-  
-} */
 
 #img_btn1{
     display:inline-block;
@@ -346,6 +342,7 @@ nav button{
     color : black;
     font-size : 14px;
     line-height: 20px;
+    font-family:'Gothic';
 }
 .ctxt1 div{
     height: 300px;
@@ -401,3 +398,48 @@ a.btn-layerClose:hover {
   background-color: #1f326a;
   color: #fff;
 }
+/* 
+11111111
+
+
+.dim-layer1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  
+  .dim-layer1 .dimBg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+  }
+  
+  .dim-layer1 .pop-layer1 {
+    display: block;
+  }
+  
+  a.btn-layerClose1 {
+    display: inline-block;
+    height: 25px;
+    padding: 0 14px 0;
+    border: 1px solid #304a8a;
+    background-color: #3f5a9d;
+    font-size: 13px;
+    color: #fff;
+    line-height: 25px;
+  }
+  
+  a.btn-layerClose1:hover {
+    border: 1px solid #091940;
+    background-color: #1f326a;
+    color: #fff;
+  } */
